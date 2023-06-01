@@ -22,15 +22,15 @@ Your places should have a name (string), city (string), state (string), cuisines
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
 |TAK|SD|CA|FOOD|
-|![image of Restaurant.](https://picsum.photos/200/300)|
+![image of Restaurant.](https://picsum.photos/200/300)
 
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
 |TAK|SD|CA|FOOD|
-|![image of Restaurant.](https://picsum.photos/200/300?grayscale)|
+![image of Restaurant.](https://picsum.photos/200/300?grayscale)
 
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
 |TAK|SD|CA|FOOD|
-|![image of Restaurant.](https://picsum.photos/200/300/?blur)|
+![image of Restaurant.](https://picsum.photos/200/300/?blur)
 
