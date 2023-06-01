@@ -21,13 +21,16 @@ REST-Rant is an app where users can review restaurants.
 Your places should have a name (string), city (string), state (string), cuisines (string) and a pic (string)
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
-|![image of Restaurant.](https://picsum.photos/200/300)
+|TAK|SD|CA|FOOD|
+|![image of Restaurant.](https://picsum.photos/200/300)|
 
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
-|![image of Restaurant.](https://picsum.photos/200/300?grayscale)
+|TAK|SD|CA|FOOD|
+|![image of Restaurant.](https://picsum.photos/200/300?grayscale)|
 
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
-|![image of Restaurant.](https://picsum.photos/200/300/?blur)
+|TAK|SD|CA|FOOD|
+|![image of Restaurant.](https://picsum.photos/200/300/?blur)|
 
