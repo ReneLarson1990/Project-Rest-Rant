@@ -29,19 +29,19 @@ TBD
 
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
-|TAK|SD|CA|FOOD|
+|TBD|TBD|TBD|TBD|
 
 ![image of Restaurant.](https://picsum.photos/200/300)
 
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
-|TAK|SD|CA|FOOD|
+|TBD|TBD|TBD|TBD|
 
 ![image of Restaurant.](https://picsum.photos/200/300?grayscale)
 
 | NAME | CITY | STATE | CUISINES |
 |---|---|---|---|
-|TAK|SD|CA|FOOD|
+|TBD|TBD|TBD|TBD|
 
 ![image of Restaurant.](https://picsum.photos/200/300/?blur)
 
