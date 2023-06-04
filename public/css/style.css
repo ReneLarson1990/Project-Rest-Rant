@@ -39,3 +39,15 @@ body {
  a:hover {
   color: black;
  }
+
+ .sticky{
+  color: rgb(245, 0, 0);
+  background-color: black;
+  height: 10vh;
+  padding-block: 25px;
+  font-size: larger;
+ }
+
+ #linked:hover{
+  color:white;
+ }

@@ -11,6 +11,9 @@ function Def (html) {
           <body>
               {html.children}
           </body>
+          <footer class="sticky">
+            Site Created By MADstax aka Rene' Larson @ <a href="https://www.linkedin.com/in/rene-larson-021152202/" id="linked">LinkedIN</a> & <a href="https://github.com/ReneLarson1990" id="linked">GitHub</a>
+          </footer>
       </html>
   )
 }
