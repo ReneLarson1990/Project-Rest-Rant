@@ -4,12 +4,39 @@ h1 {
 }
 
 body{
+  color: white;
   text-align: center;
   align-items: center;
 }
 
-img{
+img:not(.fire){
+  width: 35vw;
+  height: 35vh;
+  border: solid rgb(255, 0, 0) 5px;
+}
+
+.fire{
+  opacity: 0.7;
   width: 80vw;
   height: 50vh;
   border: solid rgb(255, 0, 0) 5px;
 }
+
+body {
+  background-repeat: none;
+  background-image: url("../images/dinerbg.jpg");
+  background-color: #ff0000;
+  background-size: cover;
+ }
+
+ footer{
+  padding-top: 20vh;
+ }
+
+ 
+ a {
+  color: #ff0000;
+}
+ a:hover {
+  color: black;
+ }
