@@ -1,14 +1,14 @@
 const React = require('react')
 const Def = require('../default')
 
-function show () {
+function DELETE () {
     return (
         <Def>
           <main>
-            <h1>Show Page</h1>
+            <h1>DELETE Page</h1>
           </main>
         </Def>
     )
 }
 
-module.exports = show
+module.exports = DELETE
