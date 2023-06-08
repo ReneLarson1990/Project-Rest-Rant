@@ -80,11 +80,18 @@ function edit_form (data) {
 </select>
           </div>
           </div>
+          <div className="row">
           <div className="form-group col-sm-6">
             <label htmlFor="cuisines">Cuisines</label>
             <input className="form-control" id="cuisines" name="cuisines" value={data.place.cuisines} required />
           </div>
-          <input className="btn btn-primary" type="submit" value="Edit Place" />
+          <div className="form-group col-sm-6">
+            <label htmlFor="founded">Year Established</label>
+            <input className="form-control" id="founded" name="founded" minLength="4" maxlength="4" pattern="[0-9]+" value={data.place.founded}/>
+          </div>
+          </div>
+          <br></br>
+          <input className="btn btn-primary" type="submit" value="Edit place"/>
         </form>
         
           </center></main>

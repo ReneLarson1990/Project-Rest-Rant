@@ -14,6 +14,9 @@ body{
   background-color: #ff0000;
   background-size: cover;
 }
+
+
+
 main{
   margin-right: 20px;
   margin-left: 20px;
@@ -47,7 +50,8 @@ img:not(.fire){
   padding-block: 15px;
   font-size: larger;
   line-height:22px;
-  margin-bottom: auto 0;
+  margin-top: auto;
+  margin-bottom: 0px;
  }
 
  #linked:hover{
@@ -56,25 +60,32 @@ img:not(.fire){
 
  nav {
   background-color: rgb(0, 0, 0);
-  padding: 10px;
+  padding: 12px;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 8px;
 }
 
 nav li {
   display: inline;
-  margin-right: 25px;
+  margin-right: 35px;
 }
 
 nav a {
   color: rgb(255, 0, 0);
   font-size: 1.5em;
+  text-decoration: none;
 }
 
 nav a:hover {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.col-sm-6,.showPage{
+  background-color: rgba(0, 0, 0, 0.589);
+  padding-top: 10px;
+  padding-bottom: 15px;
 }

@@ -80,10 +80,17 @@ function new_form () {
 </select>
           </div>
           </div>
-          <div className="form-group col-sm-4">
+          <div className="row">
+          <div className="form-group col-sm-6">
             <label htmlFor="cuisines">Cuisines</label>
             <input className="form-control" id="cuisines" name="cuisines" required />
           </div>
+          <div className="form-group col-sm-6">
+            <label htmlFor="founded">Year Established</label>
+            <input className="form-control" id="founded" name="founded" minLength="4"  maxlength="4" pattern="[0-9]+"/>
+          </div>
+          </div>
+          <br></br>
           <input className="btn btn-primary" type="submit" value="Add Place" />
         </form>
       </center></main>
