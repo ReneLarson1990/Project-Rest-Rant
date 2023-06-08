@@ -4,7 +4,7 @@ const Def = require('../default.jsx')
 function edit_form (data) {
     return (
         <Def>
-          <main>
+          <main><center>
             <h1>Edit Place</h1>
             <form method="POST" action={`/places/${data.id}?_method=PUT`}>
               <div className='row'>
@@ -12,19 +12,20 @@ function edit_form (data) {
             <label htmlFor="name">Place Name</label>
             <input className="form-control" id="name" name="name" value={data.place.name} required />
           </div>
-          <div className="form-group">
+          <div className="form-group col-sm-6">
             <label htmlFor="pic">Place Picture</label>
             <input className="form-control" id="pic" name="pic" />
           </div>
           </div>
+          <div className="row">
           <div className="form-group col-sm-6">
             <label htmlFor="city">City</label>
             <input className="form-control" id="city" name="city" />
           </div>
-          <div className="form-group">
+          <div className="form-group col-sm-6">
             <label htmlFor="state">State</label>
             {/* <input className="form-control" id="state" name="state" /> */}
-            <select name="state" size="1">
+            <select name="state" size="1" className="form-control">
   <option value="AK">AK</option>
   <option value="AL">AL</option>
   <option value="AR">AR</option>
@@ -78,14 +79,15 @@ function edit_form (data) {
   <option value="WY">WY</option>
 </select>
           </div>
-          <div className="form-group">
+          </div>
+          <div className="form-group col-sm-6">
             <label htmlFor="cuisines">Cuisines</label>
             <input className="form-control" id="cuisines" name="cuisines" required />
           </div>
           <input className="btn btn-primary" type="submit" value="Add Place" />
         </form>
         
-          </main>
+          </center></main>
         </Def>
     )
 }
