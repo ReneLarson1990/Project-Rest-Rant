@@ -1,9 +1,33 @@
+@font-face {
+  font-family: 'neon';
+  src: url('/fonts/NEON.TTF');
+}
+
+@font-face {
+  font-family: 'moms-diner';
+  src: url('/fonts/MomsDiner.ttf');
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f13939, 0 0 40px #fd4545, 0 0 50px #fffeff, 0 0 60px #f52f2f, 0 0 70px #9e2828;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #c00202, 0 0 40px #ee030fc2, 0 0 50px #c00202, 0 0 60px #c00202, 0 0 70px #ff4da6, 0 0 80px #f70808;
+  }
+}
+
 h1 {
+  font-family: 'neon', sans-serif;
   text-align: center;
   color: rgb(248, 0, 0);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 body{
+  font-family: 'moms-diner', sans-serif;
   color: white;
   text-align: center;
   min-height: 100vh; 

@@ -26,7 +26,9 @@ function Def (html) {
             Site Created By MADstax aka Rene' Larson @ <a href="https://www.linkedin.com/in/rene-larson-021152202/" id="linked">LinkedIN</a> & <a href="https://github.com/ReneLarson1990" id="linked">GitHub</a>
           <br></br>
             Background Photo by <a href="https://unsplash.com/@john_matychuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" id="linked">John Matychuk</a> on <a href="https://unsplash.com/photos/fX2WyHHeAUY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" id="linked">Unsplash</a>
-            
+            <br></br>
+             Neon font by <a href="https://www.dafont.com/neon.font" id="linked"> Fenotype @ Dafont </a>
+
 
           </footer>
       </html>
