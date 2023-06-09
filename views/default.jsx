@@ -28,6 +28,8 @@ function Def (html) {
             Background Photo by <a href="https://unsplash.com/@john_matychuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" id="linked">John Matychuk</a> on <a href="https://unsplash.com/photos/fX2WyHHeAUY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" id="linked">Unsplash</a>
             <br></br>
              Neon font by <a href="https://www.dafont.com/neon.font" id="linked"> Fenotype @ Dafont </a>
+             <br></br>
+             Diner Font by <a href="https://www.dafont.com/momsdiner.font?text=resturant" id="linked"> Moms Diner by Jake Luedecke @ Dafont </a>
 
 
           </footer>

@@ -70,8 +70,8 @@ img:not(.fire){
   
   color: rgb(235, 225, 225);
   background-color: black;
-  height: 10vh;
-  padding-block: 15px;
+  height: 12vh;
+  padding-block: 20px;
   font-size: larger;
   line-height:22px;
   margin-top: auto;
