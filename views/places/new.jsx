@@ -87,7 +87,7 @@ function new_form () {
           </div>
           <div className="form-group col-sm-6">
             <label htmlFor="founded">Year Established</label>
-            <input className="form-control" id="founded" name="founded" minLength="4"  maxlength="4" pattern="[0-9]+"/>
+            <input className="form-control" id="founded" name="founded" minLength="4"  maxLength="4" pattern="[0-9]+"/>
           </div>
           </div>
           <br></br>

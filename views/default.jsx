@@ -5,7 +5,7 @@ function Def (html) {
       <html>
           <head>
               <title>Title</title>
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"></link>
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossOrigin="anonymous"></link>
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
               <link rel="stylesheet" href="/css/style.css"/>
               
@@ -13,9 +13,9 @@ function Def (html) {
           <body>
             <nav>
               <ul>
-                <li><a href="/" className="hm"><i class="bi bi-house"></i>Home</a></li>
-                <li><a href="/places" className='pl'><i class="bi bi-geo-alt"></i>Places</a></li>
-                <li><a href="/places/new" className='nw'><i class="bi bi-building-add"></i>Add Place</a></li>
+                <li><a href="/" className="hm"><i className="bi bi-house"></i>Home</a></li>
+                <li><a href="/places" className='pl'><i className="bi bi-geo-alt"></i>Places</a></li>
+                <li><a href="/places/new" className='nw'><i className="bi bi-building-add"></i>Add Place</a></li>
               </ul>
             </nav>
 
