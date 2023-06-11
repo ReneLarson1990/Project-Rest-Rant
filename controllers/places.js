@@ -1,10 +1,12 @@
-const router = require('express').Router()
+const express = require('express')
+const router = express.Router()
+const places = require("../models/places")
 const db = require('../models')
 
 router.get('/', (req, res) => {
     db.Place.find()
     .then((places) => {
-      res.render('places/index', { places })
+      res.render("places/index", { places })
     })
     .catch(err => {
       console.log(err) 
