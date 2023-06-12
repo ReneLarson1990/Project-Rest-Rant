@@ -28,7 +28,7 @@ function show (data) {
               </a> 
               <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}> 
                 <button type="submit" className="btn btn-danger">
-                  Delete <i class="bi bi-trash3"></i>
+                  Delete <i className="bi bi-trash3"></i>
                 </button>
               </form></div>   
             </center></body>
