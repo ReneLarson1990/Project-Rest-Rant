@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const placeSchema = new mongoose.Schema({
-  name: { type: String, required: true },
+  name : { type: String, required: true },
   pic: {type: String, default: '/images/50s.jpg'},
   cuisines: { type: String, required: true },
   city: { type: String, default: 'Anytown' },
