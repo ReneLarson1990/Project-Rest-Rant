@@ -24,7 +24,7 @@ function show (data) {
             No comments yet!
             <br></br>
             <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
-            <i class="bi bi-pencil-square"></i> Edit
+            <i className="bi bi-pencil-square"></i> Edit
               </a> 
               <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}> 
                 <button type="submit" className="btn btn-danger">
@@ -37,3 +37,5 @@ function show (data) {
 }
 
 module.exports = show;
+
+
