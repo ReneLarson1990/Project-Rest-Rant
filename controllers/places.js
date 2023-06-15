@@ -37,7 +37,9 @@ router.get('/new', (req, res) => {
 router.get('/:id', (req, res) => {
   let id = req.params.id;
   db.Place.findById(id)
+  .populate('comments')
   .then((place) => {
+    console.log(place.comments)
     if (!place) {
       res.render('error404');
     } else {
