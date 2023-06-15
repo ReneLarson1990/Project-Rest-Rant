@@ -9,23 +9,28 @@ function show (data) {
           </main>
           <body><center>
             <div className="showPage">
-            <img src={data.place.pic} alt="Place Image" />
+            <img src={data.place.pic} alt={data.place.name} />
             <br></br>
-            <h2>description</h2> 
             Located: {data.place.city}, {data.place.state}
+            <h2>description</h2>
+            <h3>
+              {data.place.showEstablished()}
+              </h3>
+              <h4>{data.place.cuisines}</h4> 
             <br></br>
-            Available Cuisines: {data.place.cuisines} 
+            {/* Available Cuisines: {data.place.cuisines} 
             <br></br>
-            Year Founded:{data.place.founded} 
-            <br></br>       
+            {/* Year Founded:{data.place.founded}  */}
+            {/* <br></br>        */} 
             <h2>Rating</h2>
             currently unrated.
             <h2>Comments</h2>
             No comments yet!
             <br></br>
-            <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
-            <i className="bi bi-pencil-square"></i> Edit
-              </a> 
+            <a href={`/places/${data.place._id}/edit`} className="btn btn-warning"> 
+  <i className="bi bi-pencil-square"></i> Edit
+</a>
+ 
               <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}> 
                 <button type="submit" className="btn btn-danger">
                   Delete <i className="bi bi-trash3"></i>

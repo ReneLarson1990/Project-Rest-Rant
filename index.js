@@ -21,9 +21,6 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
-app.get('*', (req, res) => {
-    res.render('error404')
-})
 
 const port = process.env.PORT || 3000
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true},
@@ -32,6 +29,7 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
   app.get('*', (req, res) => {
     res.render('error404')
   })
+
 // Listen for Connections
 app.listen(process.env.PORT)
 

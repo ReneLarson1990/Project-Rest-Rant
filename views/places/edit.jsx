@@ -87,7 +87,7 @@ function edit_form (data) {
           </div>
           <div className="form-group col-sm-6">
             <label htmlFor="founded">Year Established</label>
-            <input className="form-control" id="founded" name="founded" minLength="4" maxlength="4" pattern="[0-9]+" value={data.place.founded}/>
+            <input className="form-control" id="founded" name="founded" type="number" defaultValue={new Date().getFullYear()} required />
           </div>
           </div>
           <br></br>
