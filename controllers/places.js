@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
   db.Place.findById(id)
   .populate('comments')
   .then((place) => {
-    console.log(place.comments)
+    // console.log(place.comments)
     if (!place) {
       res.render('error404');
     } else {
@@ -75,26 +75,62 @@ router.delete('/:id', async (req, res, next) => {
   }
 })
 
-
-router.get('/:id/edit', async (req, res, next) => {
-  try {
-    const place = await db.Place.findById(req.params.id)
-    res.render('places/edit', { place })
-  } catch (err) {
-    next(err)
-  }
+// router.get('/:id/edit', async (req, res, next) => {
+//   try {
+//     const place = await db.Place.findById(req.params.id)
+//     res.render('places/edit', { place })
+//   } catch (err) {
+//     next(err)
+//   }
+// })
+router.get('/:id/edit', (req, res) => {
+  db.Place.findById(req.params.id)
+  .then(place => {
+      res.render('places/edit', { place })
+  })
+  .catch(err => {
+      res.render('error404')
+  })
 })
+
+
+
+router.post('/:id/comment', (req, res) => {
+  req.body.rant = req.body.rant ? true : false
+  db.Place.findById(req.params.id)
+  .then(place => {
+      db.Comment.create(req.body)
+      .then(comment => {
+          place.comments.push(comment.id)
+          place.save().then(()=>{
+            res.redirect(`/places/${req.params.id}`)
+          })
+      })
+      .catch(err => {
+          res.render('error404')
+      })
+  })
+  .catch(err => {
+      res.render('error404')
+  })
+})
+
+
+
+
+
+
 
 
 
 //rant area
 
-router.post('/:id/rant', (req, res) => {
-  res.send('GET /places/:id/rant stub')
-})
+// router.post('/:id/rant', (req, res) => {
+//   res.send('GET /places/:id/rant stub')
+// })
 
-router.delete('/:id/rant/:rantId', (req, res) => {
-    res.send('GET /places/:id/rant/:rantId stub')
-})
+// router.delete('/:id/rant/:rantId', (req, res) => {
+//     res.send('GET /places/:id/rant/:rantId stub')
+// })
 
 module.exports = router
