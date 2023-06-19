@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const db = require('../models')
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 router.get('/', async (req, res, next) => {
   try {
@@ -84,11 +84,14 @@ router.delete('/:id', async (req, res, next) => {
 //   }
 // })
 router.get('/:id/edit', (req, res) => {
+  // console.log('Value of req.params.id:', req.params.id);
   db.Place.findById(req.params.id)
   .then(place => {
       res.render('places/edit', { place })
+      // console.log('Value of place:', place);
   })
   .catch(err => {
+    // console.log('Error:', err);
       res.render('error404')
   })
 })

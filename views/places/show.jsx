@@ -15,15 +15,15 @@ function show(data) {
     let averageRating = Math.round(sumRatings / data.place.comments.length);
     let stars = "";
     for (let i = 0; i < averageRating; i++) {
-      stars += "⭐️";
+      stars += "🍔";
     }
-    rating = <h3>{stars} stars</h3>;
+    rating = <h3>{stars} Yum Meter</h3>;
       return (
-        <div className="col-sm-4 rant-box">
-          <h2 className="rant">{c.rant ? 'Rant! :(' : 'Rave! :)'}</h2>
+        <div className="col-sm-4 rant-box" key={c.id}>
+          <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😍'}</h2>
           <h4>{c.content}</h4>
           <h3>
-            <stong>- {c.author}</stong>
+            <strong>- {c.author}</strong>
           </h3>
           <h4>Rating: {c.stars}</h4>
           <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
@@ -49,7 +49,7 @@ function show(data) {
               <br/>
             </div>
             <div>
-              <h2>Desciption</h2>
+              <h2>Description</h2>
               <h3>{data.place.showEstablished()}</h3>
               <h4>Serving {data.place.cuisines} </h4>
             </div>
@@ -82,7 +82,7 @@ function show(data) {
                 </div>
                 <div className="col-md-2">
                   <div className="form-check">
-                    <label class="form-check-label" htmlFor="rant" id="rant-checkbox">Rant?</label>
+                    <label className="form-check-label" htmlFor="rant" id="rant-checkbox">Rant?</label>
                     <br/>
                     <input className="form-check-input" type="checkbox" id="rant" name="rant"/>
                   </div>
@@ -117,7 +117,7 @@ module.exports = show
 //           <h2 className="rant">{c.rant ? "Rant! 😡" : "Rave! 😍"}</h2>
 //           <h4>{c.content}</h4>
 //           <h3>
-//             <stong>- {c.author}</stong>
+//             <strong>- {c.author}</strong>
 //           </h3>
 //           <h4>Rating: {c.stars}</h4>
 //         </div>

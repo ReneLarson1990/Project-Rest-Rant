@@ -34,7 +34,7 @@ body{
   display: flex; 
   flex-direction: column;
   background-repeat: none;
-  background-image: url("../images/dinerbg.jpg");
+  background-image: url("../images/diner-bg.jpg");
   background-color: #ff0000;
   background-size: cover;
 }
