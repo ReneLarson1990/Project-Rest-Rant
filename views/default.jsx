@@ -4,7 +4,8 @@ function Def (html) {
   return (
       <html>
           <head>
-              <title>Title</title>
+              <title>Neon-Diner - Rest-Rant</title>
+              <link rel="shortcut icon" type="image/jpg" href="/images/neon.png"/>
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossOrigin="anonymous"></link>
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
               <link rel="stylesheet" href="/css/style.css"/>

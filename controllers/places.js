@@ -144,8 +144,22 @@ router.post('/:id/comment', (req, res) => {
 //   res.send('GET /places/:id/rant stub')
 // })
 
-// router.delete('/:id/rant/:rantId', (req, res) => {
+// router.delete('/:id/comment/:commentId', (req, res) => {
 //     res.send('GET /places/:id/rant/:rantId stub')
 // })
+
+
+router.delete('/:id/comment/:commentId', (req, res) => {
+  db.Comment.findByIdAndDelete(req.params.commentId)
+    .then(() => {
+      res.redirect(`/places/${req.params.id}`)
+    })
+    .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+    })
+})
+module.exports = router
+
 
 module.exports = router
