@@ -39,7 +39,6 @@ router.get('/:id', (req, res) => {
   db.Place.findById(id)
   .populate('comments')
   .then((place) => {
-    // console.log(place.comments)
     if (!place) {
       res.render('error404');
     } else {
@@ -55,14 +54,7 @@ router.get('/:id', (req, res) => {
 
 
 
-// router.put('/:id', async (req, res, next) => {
-//   try {
-//     await db.Place.findByIdAndUpdate(req.params.id, req.body)
-//     res.redirect(`/places/${req.params.id}`)
-//   } catch (err) {
-//     next(err)
-//   }
-// })
+
 router.put('/:id', (req, res) => {
   db.Place.findByIdAndUpdate(req.params.id, req.body)
   .then(() => {
@@ -87,27 +79,15 @@ router.delete('/:id', async (req, res, next) => {
   }
 })
 
-// router.get('/:id/edit', async (req, res, next) => {
-//   try {
-//     const place = await db.Place.findById(req.params.id)
-//     res.render('places/edit', { place })
-//   } catch (err) {
-//     next(err)
-//   }
-// })
 router.get('/:id/edit', (req, res) => {
-  // console.log('Value of req.params.id:', req.params.id);
   db.Place.findById(req.params.id)
   .then(place => {
       res.render('places/edit', { place })
-      // console.log('Value of place:', place);
   })
   .catch(err => {
-    // console.log('Error:', err);
       res.render('error404')
   })
 })
-
 
 
 router.post('/:id/comment', (req, res) => {
@@ -129,25 +109,6 @@ router.post('/:id/comment', (req, res) => {
       res.render('error404')
   })
 })
-
-
-
-
-
-
-
-
-
-//rant area
-
-// router.post('/:id/rant', (req, res) => {
-//   res.send('GET /places/:id/rant stub')
-// })
-
-// router.delete('/:id/comment/:commentId', (req, res) => {
-//     res.send('GET /places/:id/rant/:rantId stub')
-// })
-
 
 router.delete('/:id/comment/:commentId', (req, res) => {
   db.Comment.findByIdAndDelete(req.params.commentId)

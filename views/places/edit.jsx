@@ -83,7 +83,7 @@ function edit_form (data) {
           <div className="row">
           <div className="form-group col-sm-6">
             <label htmlFor="cuisines">Cuisines</label>
-            <input className="form-control" id="cuisines" name="cuisines" value={data.place.cuisines} required />
+            <input className="form-control" id="cuisines" name="cuisines" defaultValue={data.place.cuisines} required />
           </div>
           <div className="form-group col-sm-6">
             <label htmlFor="founded">Year Established</label>
@@ -91,7 +91,7 @@ function edit_form (data) {
           </div>
           </div>
           <br></br>
-          <input className="btn btn-primary" type="submit" value="Edit place"/>
+          <input className="btn btn-primary" type="submit" defaultValue="Edit place"/>
         </form>
         
           </center></main>

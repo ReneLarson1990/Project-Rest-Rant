@@ -116,4 +116,22 @@ nav a:hover {
 
 .rant-post-box{ 
   background-color: rgba(0, 0, 0, 0.589);
+  margin-top: 15px;
 }
+
+.comments-box{
+  padding: 15px;
+}
+
+.rant-box{ 
+  background-color: rgba(0, 0, 0, 0.589);
+  border: double red 7px;
+  padding: 15px;
+  box-shadow: 0 0 40px 12px #ed0305;
+}
+
+#rant{ 
+  padding: 15px;
+  margin-left: 200px;
+  box-shadow: 0 0 40px 12px #ed0305;
+} 
