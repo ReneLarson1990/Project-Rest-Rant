@@ -55,14 +55,26 @@ router.get('/:id', (req, res) => {
 
 
 
-router.put('/:id', async (req, res, next) => {
-  try {
-    await db.Place.findByIdAndUpdate(req.params.id, req.body)
-    res.redirect(`/places/${req.params.id}`)
-  } catch (err) {
-    next(err)
-  }
+// router.put('/:id', async (req, res, next) => {
+//   try {
+//     await db.Place.findByIdAndUpdate(req.params.id, req.body)
+//     res.redirect(`/places/${req.params.id}`)
+//   } catch (err) {
+//     next(err)
+//   }
+// })
+router.put('/:id', (req, res) => {
+  db.Place.findByIdAndUpdate(req.params.id, req.body)
+  .then(() => {
+      res.redirect(`/places/${req.params.id}`)
+  })
+  .catch(err => {
+      console.log('err', err)
+      res.render('error404')
+  })
 })
+
+
 
 
 

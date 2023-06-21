@@ -77,7 +77,7 @@ function show(data) {
                   <input className="form-control" id="author" name="author" />
                 </div>
                 <div className="col-md-4">
-                  <label htmlFor="stars" className="form-label">Stars</label>
+                  <label htmlFor="stars" className="form-label">Burger Rating</label>
                   <input className="form-range" type="range" id="stars" name="stars" min="1" max="5" step="0.5"/>
                 </div>
                 <div className="col-md-2">
