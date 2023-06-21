@@ -91,7 +91,10 @@ function edit_form (data) {
           </div>
           </div>
           <br></br>
-          <input className="btn btn-primary" type="submit" defaultValue="Edit place"/>
+          {/* <input className="btn btn-primary" type="submit" defaultValue="Edit place"/> */}
+          <button type="submit" className="btn btn-warning">
+          <i className="fa-solid fa-pen-to-square fa-beat"></i> Edit
+              </button>
         </form>
         
           </center></main>

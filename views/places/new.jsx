@@ -91,7 +91,10 @@ function new_form (data) {
           </div>
           </div>
           <br></br>
-          <input className="btn btn-primary" type="submit" value="Add Place" />
+          {/* <input className="btn btn-primary" type="submit" defaultValue="Add Place" /> */}
+          <button type="submit" className="btn btn-danger">
+          <i className="fa-solid fa-plus fa-beat"></i> ADD LOCATION
+              </button>
         </form>
       </center></main>
     </Def>

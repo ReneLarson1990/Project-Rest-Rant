@@ -1,5 +1,6 @@
 const React = require('react')
 
+
 function Def (html) {
   return (
       <html>
@@ -9,17 +10,16 @@ function Def (html) {
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossOrigin="anonymous"></link>
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
               <link rel="stylesheet" href="/css/style.css"/>
-              
+              <script src="https://kit.fontawesome.com/4dceebf677.js" crossOrigin="anonymous"></script>
           </head>
           <body>
             <nav>
               <ul>
-                <li><a href="/" className="hm"><i className="bi bi-house"></i>Home</a></li>
-                <li><a href="/places" className='pl'><i className="bi bi-geo-alt"></i>Places</a></li>
-                <li><a href="/places/new" className='nw'><i className="bi bi-building-add"></i>Add Place</a></li>
+                <li><a href="/" className="hm"><i className="bi bi-house"></i> Home</a></li>
+                <li><a href="/places" className='pl'><i className="bi bi-geo-alt"></i> Places</a></li>
+                <li><a href="/places/new" className='nw'><i className="bi bi-building-add"></i> Add Place</a></li>
               </ul>
             </nav>
-
             
               {html.children}
           </body>
@@ -37,6 +37,8 @@ function Def (html) {
       </html>
   )
 }
+
+
 
 
 module.exports = Def
