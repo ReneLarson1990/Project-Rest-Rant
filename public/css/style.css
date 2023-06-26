@@ -238,7 +238,7 @@ position:static;z-index:2;
 /* rating meter  */
 
 .form-range{
-  -webkit-appearance: none;
+  
   width: 100%;
   height: 30px;
   border-radius: 5px;  
