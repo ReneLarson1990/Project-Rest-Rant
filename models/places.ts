@@ -1,6 +1,21 @@
-const mongoose = require("mongoose");
+import mongoose, { Document, Schema, Model } from "mongoose";
 
-const placeSchema = new mongoose.Schema({
+interface IPlace extends Document {
+  name: string;
+  pic: string;
+  cuisines: string[];
+  city: string;
+  state: string;
+  founded: {
+    type: number;
+    min: [number, string];
+    max: [number, string];
+  };
+  comments: mongoose.Types.ObjectId[];
+  showEstablished: () => string;
+}
+
+const placeSchema: Schema<IPlace> = new Schema<IPlace>({
   name: { type: String, required: true, trim: true },
   pic: { type: String, default: '/images/diner.jpg' },
   cuisines: [{ type: String, required: true }],
@@ -20,8 +35,10 @@ const placeSchema = new mongoose.Schema({
   comments: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }],
 });
 
-placeSchema.methods.showEstablished = function () {
+placeSchema.methods.showEstablished = function (): string {
   return `${this.name} has been serving ${this.city}, ${this.state} since ${this.founded}.`;
 };
 
-module.exports = mongoose.model("Place", placeSchema);
+const Place: Model<IPlace> = mongoose.model<IPlace>("Place", placeSchema);
+
+export default Place;
